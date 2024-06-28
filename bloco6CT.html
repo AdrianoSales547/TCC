@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="programacao,html">
+    <meta name="author" content="Adriano Sales e Leonardo">
+    <link rel="stylesheet" type="text/css" href="mapa-armarios.css">
+    <link rel="stylesheet" type="text/css" href="uniceub-styles.css">
+    <script src="app.js"></script>
+   <!-- <script src="script.js"></script>  -->
+    <script src="preencher.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://institucional.uniceub.br/hubfs/BrandCenter/img/logo-ceub-colorida.png" alt="Logo" class="logo">
+        <h1 class="main-title">Aluguel de Armários</h1>
+    </header>
+
+
+    <section class="controles">
+        <h2>Escolha um Armário Desocupado</h2>
+        <select id="armarios-disponiveis">
+            <option value="">Selecione um Armário</option>
+        </select>
+
+        <button type="submit" id="selecionar-armario" onclick="selecionarArmario()">Selecionar</button>
+        <button id="liberar-armario" onclick="liberarArmario()">Liberar</button>
+    </section>
+
+
+    <section class="mapa">
+        <div class="bloco" id="6">
+            <h2>Bloco 6 - Térreo - Modulo C</h2>
+            <div class="Modulo" data-andar="C">
+                <div class="armario liberado" data-armario="241">Armário 241</div>
+                <div class="armario liberado" data-armario="242">Armário 242</div>
+                <div class="armario liberado" data-armario="243">Armário 243</div>
+                <div class="armario liberado" data-armario="244">Armário 244</div>
+                <div class="armario liberado" data-armario="245">Armário 245</div>
+                <div class="armario liberado" data-armario="246">Armário 246</div>
+                <div class="armario liberado" data-armario="247">Armário 247</div>
+                <div class="armario liberado" data-armario="248">Armário 248</div>
+                <div class="armario liberado" data-armario="249">Armário 249</div>
+                <div class="armario liberado" data-armario="250">Armário 250</div>
+                <div class="armario liberado" data-armario="251">Armário 251</div>
+                <div class="armario liberado" data-armario="252">Armário 252</div>
+                <div class="armario liberado" data-armario="253">Armário 253</div>
+                <div class="armario liberado" data-armario="254">Armário 254</div>
+                <div class="armario liberado" data-armario="255">Armário 255</div>
+                <div class="armario liberado" data-armario="256">Armário 256</div>
+                <div class="armario liberado" data-armario="257">Armário 257</div>
+                <div class="armario liberado" data-armario="258">Armário 258</div>
+                <div class="armario liberado" data-armario="259">Armário 259</div>
+                <div class="armario liberado" data-armario="260">Armário 260</div>
+                <div class="armario liberado" data-armario="261">Armário 261</div>
+                <div class="armario liberado" data-armario="262">Armário 262</div>
+                <div class="armario liberado" data-armario="263">Armário 263</div>
+                <div class="armario liberado" data-armario="264">Armário 264</div>
+                <div class="armario liberado" data-armario="265">Armário 265</div>
+                <div class="armario liberado" data-armario="266">Armário 266</div>
+                <div class="armario liberado" data-armario="267">Armário 267</div>
+                <div class="armario liberado" data-armario="268">Armário 268</div>
+                <div class="armario liberado" data-armario="269">Armário 269</div>
+                <div class="armario liberado" data-armario="270">Armário 270</div>
+                <div class="armario liberado" data-armario="271">Armário 271</div>
+                <div class="armario liberado" data-armario="272">Armário 272</div>
+                <div class="armario liberado" data-armario="273">Armário 273</div>
+                <div class="armario liberado" data-armario="274">Armário 274</div>
+                <div class="armario liberado" data-armario="275">Armário 275</div>
+                <div class="armario liberado" data-armario="276">Armário 276</div>
+                <div class="armario liberado" data-armario="277">Armário 277</div>
+                <div class="armario liberado" data-armario="278">Armário 278</div>
+                <div class="armario liberado" data-armario="279">Armário 279</div>
+                <div class="armario liberado" data-armario="280">Armário 280</div>
+                <div class="armario liberado" data-armario="281">Armário 281</div>
+                <div class="armario liberado" data-armario="282">Armário 282</div>
+                <div class="armario liberado" data-armario="283">Armário 283</div>
+                <div class="armario liberado" data-armario="284">Armário 284</div>
+                <div class="armario liberado" data-armario="285">Armário 285</div>
+                <div class="armario liberado" data-armario="286">Armário 286</div>
+                <div class="armario liberado" data-armario="287">Armário 287</div>
+                <div class="armario liberado" data-armario="288">Armário 288</div>
+                <div class="armario liberado" data-armario="289">Armário 289</div>
+                <div class="armario liberado" data-armario="290">Armário 290</div>
+                <div class="armario liberado" data-armario="291">Armário 291</div>
+                <div class="armario liberado" data-armario="292">Armário 292</div>
+                <div class="armario liberado" data-armario="293">Armário 293</div>
+                <div class="armario liberado" data-armario="294">Armário 294</div>
+                <div class="armario liberado" data-armario="295">Armário 295</div>
+                <div class="armario liberado" data-armario="296">Armário 296</div>
+                <div class="armario liberado" data-armario="297">Armário 297</div>
+                <div class="armario liberado" data-armario="298">Armário 298</div>
+                <div class="armario liberado" data-armario="299">Armário 299</div>
+                <div class="armario liberado" data-armario="300">Armário 300</div>
+                <div class="armario liberado" data-armario="301">Armário 301</div>
+                <div class="armario liberado" data-armario="302">Armário 302</div>
+                <div class="armario liberado" data-armario="303">Armário 303</div>
+                <div class="armario liberado" data-armario="304">Armário 304</div>
+                <div class="armario liberado" data-armario="305">Armário 305</div>
+                <div class="armario liberado" data-armario="306">Armário 306</div>
+                <div class="armario liberado" data-armario="307">Armário 307</div>
+                <div class="armario liberado" data-armario="308">Armário 308</div>
+                <div class="armario liberado" data-armario="309">Armário 309</div>
+                <div class="armario liberado" data-armario="310">Armário 310</div>
+                <div class="armario liberado" data-armario="311">Armário 311</div>
+                <div class="armario liberado" data-armario="312">Armário 312</div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

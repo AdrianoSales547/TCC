@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="programacao,html">
+    <meta name="author" content="Adriano Sales e Leonardo">
+    <link rel="stylesheet" type="text/css" href="mapa-armarios.css">
+    <link rel="stylesheet" type="text/css" href="uniceub-styles.css">
+    <script src="app.js"></script>
+    <!-- <script src="script.js"></script>  -->
+    <script src="preencher.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://institucional.uniceub.br/hubfs/BrandCenter/img/logo-ceub-colorida.png" alt="Logo" class="logo">
+        <h1 class="main-title">Aluguel de Armários</h1>
+    </header>
+
+
+    <section class="controles">
+        <h2>Escolha um Armário Desocupado</h2>
+        <select id="armarios-disponiveis">
+            <option value="">Selecione um Armário</option>
+        </select>
+
+        <button type="submit" id="selecionar-armario" onclick="selecionarArmario()">Selecionar</button>
+        <button id="liberar-armario" onclick="liberarArmario()">Liberar</button>
+    </section>
+
+    <section class="mapa">
+        <div class="bloco" id="9">
+            <h2>Bloco 9 - 2º Subsolo - Modulo B</h2>
+            <div class="Modulo" data-andar="B">
+                <div class="armario liberado" data-armario="050">Armário 050</div>
+                <div class="armario liberado" data-armario="051">Armário 051</div>
+                <div class="armario liberado" data-armario="052">Armário 052</div>
+                <div class="armario liberado" data-armario="053">Armário 053</div>
+                <div class="armario liberado" data-armario="054">Armário 054</div>
+                <div class="armario liberado" data-armario="055">Armário 055</div>
+                <div class="armario liberado" data-armario="056">Armário 056</div>
+                <div class="armario liberado" data-armario="057">Armário 057</div>
+                <div class="armario liberado" data-armario="058">Armário 058</div>
+                <div class="armario liberado" data-armario="059">Armário 059</div>
+                <div class="armario liberado" data-armario="060">Armário 060</div>
+                <div class="armario liberado" data-armario="061">Armário 061</div>
+                <div class="armario liberado" data-armario="062">Armário 062</div>
+                <div class="armario liberado" data-armario="063">Armário 063</div>
+                <div class="armario liberado" data-armario="064">Armário 064</div>
+                <div class="armario liberado" data-armario="065">Armário 065</div>
+                <div class="armario liberado" data-armario="066">Armário 066</div>
+                <div class="armario liberado" data-armario="067">Armário 067</div>
+                <div class="armario liberado" data-armario="068">Armário 068</div>
+                <div class="armario liberado" data-armario="069">Armário 069</div>
+                <div class="armario liberado" data-armario="070">Armário 070</div>
+                <div class="armario liberado" data-armario="071">Armário 071</div>
+                <div class="armario liberado" data-armario="072">Armário 072</div>
+                <div class="armario liberado" data-armario="073">Armário 073</div>
+                <div class="armario liberado" data-armario="074">Armário 074</div>
+                <div class="armario liberado" data-armario="075">Armário 075</div>
+                <div class="armario liberado" data-armario="076">Armário 076</div>
+                <div class="armario liberado" data-armario="077">Armário 077</div>
+                <div class="armario liberado" data-armario="078">Armário 078</div>
+                <div class="armario liberado" data-armario="079">Armário 079</div>
+                <div class="armario liberado" data-armario="080">Armário 080</div>
+                <div class="armario liberado" data-armario="081">Armário 081</div>
+                <div class="armario liberado" data-armario="082">Armário 082</div>
+                <div class="armario liberado" data-armario="083">Armário 083</div>
+                <div class="armario liberado" data-armario="084">Armário 084</div>
+                <div class="armario liberado" data-armario="085">Armário 085</div>
+                <div class="armario liberado" data-armario="086">Armário 086</div>
+                <div class="armario liberado" data-armario="087">Armário 087</div>
+                <div class="armario liberado" data-armario="088">Armário 088</div>
+                <div class="armario liberado" data-armario="089">Armário 089</div>
+                <div class="armario liberado" data-armario="090">Armário 090</div>
+                <div class="armario liberado" data-armario="091">Armário 091</div>
+                <div class="armario liberado" data-armario="092">Armário 092</div>
+                <div class="armario liberado" data-armario="093">Armário 093</div>
+                <div class="armario liberado" data-armario="094">Armário 094</div>
+                <div class="armario liberado" data-armario="095">Armário 095</div>
+                <div class="armario liberado" data-armario="096">Armário 096</div>
+                <div class="armario liberado" data-armario="097">Armário 097</div>
+                <div class="armario liberado" data-armario="098">Armário 098</div>
+                <div class="armario liberado" data-armario="099">Armário 099</div>
+                <div class="armario liberado" data-armario="100">Armário 100</div>
+                <div class="armario liberado" data-armario="101">Armário 101</div>
+                <div class="armario liberado" data-armario="102">Armário 102</div>
+                <div class="armario liberado" data-armario="103">Armário 103</div>
+                <div class="armario liberado" data-armario="104">Armário 104</div>
+                <div class="armario liberado" data-armario="105">Armário 105</div>
+                <div class="armario liberado" data-armario="106">Armário 106</div>
+                <div class="armario liberado" data-armario="107">Armário 107</div>
+                <div class="armario liberado" data-armario="108">Armário 108</div>
+                <div class="armario liberado" data-armario="109">Armário 109</div>
+                <div class="armario liberado" data-armario="110">Armário 110</div>
+                <div class="armario liberado" data-armario="111">Armário 111</div>
+                <div class="armario liberado" data-armario="112">Armário 112</div>
+                <div class="armario liberado" data-armario="113">Armário 113</div>
+                <div class="armario liberado" data-armario="114">Armário 114</div>
+                <div class="armario liberado" data-armario="115">Armário 115</div>
+                <div class="armario liberado" data-armario="116">Armário 116</div>
+                <div class="armario liberado" data-armario="117">Armário 117</div>
+                <div class="armario liberado" data-armario="118">Armário 118</div>
+                <div class="armario liberado" data-armario="119">Armário 119</div>
+                <div class="armario liberado" data-armario="120">Armário 120</div>
+                <div class="armario liberado" data-armario="121">Armário 121</div>
+                <div class="armario liberado" data-armario="122">Armário 122</div>
+                <div class="armario liberado" data-armario="123">Armário 123</div>
+                <div class="armario liberado" data-armario="124">Armário 124</div>
+                <div class="armario liberado" data-armario="125">Armário 125</div>
+                <div class="armario liberado" data-armario="126">Armário 126</div>
+                <div class="armario liberado" data-armario="127">Armário 127</div>
+                <div class="armario liberado" data-armario="128">Armário 128</div>
+                <div class="armario liberado" data-armario="129">Armário 129</div>
+                <div class="armario liberado" data-armario="130">Armário 130</div>
+                <div class="armario liberado" data-armario="131">Armário 131</div>
+                <div class="armario liberado" data-armario="132">Armário 132</div>
+                <div class="armario liberado" data-armario="133">Armário 133</div>
+                <div class="armario liberado" data-armario="134">Armário 134</div>
+                <div class="armario liberado" data-armario="135">Armário 135</div>
+                <div class="armario liberado" data-armario="136">Armário 136</div>
+                <div class="armario liberado" data-armario="137">Armário 137</div>
+                <div class="armario liberado" data-armario="138">Armário 138</div>
+                <div class="armario liberado" data-armario="139">Armário 139</div>
+                <div class="armario liberado" data-armario="140">Armário 140</div>
+                <div class="armario liberado" data-armario="141">Armário 141</div>
+                <div class="armario liberado" data-armario="142">Armário 142</div>
+                <div class="armario liberado" data-armario="143">Armário 143</div>
+                <div class="armario liberado" data-armario="144">Armário 144</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

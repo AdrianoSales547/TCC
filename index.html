@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="programacao,html">
+    <meta name="author" content="Adriano Sales">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="uniceub-styles.css">
+    <title>Aluguel de Armários</title>
+</head>
+<body>
+    <header class="header">
+        <img src="https://institucional.uniceub.br/hubfs/BrandCenter/img/logo-ceub-colorida.png" alt="Logo da Sua Empresa" class="logo">
+        <h1 class="main-title">Aluguel de Armários</h1>
+    </header>
+
+    <div class="registration-form">
+        <h2>Registro de Alunos</h2>
+        <form id="register-form" action="/cadastrar" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="ra">RA:</label>
+                <input type="text" id="ra" name="ra" required>
+            </div>
+            <div class="form-group">
+                <label for="bloco">Selecione o Bloco:</label>
+                <select id="bloco" name="bloco" required>
+                    <option value="bloco6A">Bloco 6 - Subsolo - Modulo A</option>
+                    <option value="bloco6B">Bloco 6 - Subsolo - Modulo B</option>
+                    <option value="bloco6C">Bloco 6 - Subsolo - Modulo C</option>
+                    <option value="bloco6D">Bloco 6 - Subsolo - Modulo D</option>
+                    <option value="bloco6E">Bloco 6 - Subsolo - Modulo E</option>
+                    <option value="bloco6F">Bloco 6 - Subsolo - Modulo F</option>
+                    <option value="bloco6G">Bloco 6 - Subsolo - Modulo G</option>
+                    <option value="bloco6H">Bloco 6 - Subsolo - Modulo H</option>
+                    <option value="bloco6AT">Bloco 6 - Térreo - Modulo A</option>
+                    <option value="bloco6BT">Bloco 6 - Térreo - Modulo B</option>
+                    <option value="bloco6CT">Bloco 6 - Térreo - Modulo C</option>
+                    <option value="bloco9A">Bloco 9 - 2º Subsolo - Modulo A</option>
+                    <option value="bloco9B">Bloco 9 - 2º Subsolo - Modulo B</option>
+                    <option value="bloco9C">Bloco 9 - 2º Subsolo - Modulo C</option>
+                    <option value="bloco9D">Bloco 9 - 2º Subsolo - Modulo D</option>
+                    <option value="bloco9E">Bloco 9 - 2º Subsolo - Modulo E</option>
+                    <option value="bloco9A1">Bloco 9 - 1º Subsolo - Modulo A</option>
+                    <option value="bloco9B1">Bloco 9 - 1º Subsolo - Modulo B</option>
+                    <option value="bloco9C1">Bloco 9 - 1º Subsolo - Modulo C</option>
+                    <option value="bloco9D1">Bloco 9 - 1º Subsolo - Modulo D</option>
+                    <option value="bloco10A">Bloco 10 - Modulo A</option>
+                    <option value="bloco10B">Bloco 10 - Modulo B</option>
+                    <option value="bloco10C">Bloco 10 - Modulo C</option>
+                </select>
+            </div>
+
+            <button type="submit">Escolher armário</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

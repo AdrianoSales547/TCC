@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5b0072;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    inline-size: 100px; 
+    block-size: 80px;
+    margin-block-end: 20px;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #555;
+}
+
+.bloco {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.bloco h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.andar {
+    margin-block-start: 10px;
+}
+
+.armario {
+    inline-size: 100px;
+    block-size: 100px;
+    background-color: #6caab1;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.liberado {
+    background-color: #6caab1;
+}
+
+.ocupado {
+    background-color: #e74c3c;
+}
+
+.liberado:hover {
+    background-color: #4d8d9b;
+}
+
+.ocupado:hover {
+    background-color: #c13928;
+}
+
+.controles {
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+#selecionar-armario,
+#liberar-armario {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#armarios-disponiveis {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #353434;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    inset-block-end: 0;
+    inline-size: 100%;
+}

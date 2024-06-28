@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="programacao,html">
+    <meta name="author" content="Adriano Sales e Leonardo">
+    <link rel="stylesheet" type="text/css" href="mapa-armarios.css">
+    <link rel="stylesheet" type="text/css" href="uniceub-styles.css">
+    <script src="app.js"></script>
+    <!-- <script src="script.js"></script>  -->
+    <script src="preencher.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://institucional.uniceub.br/hubfs/BrandCenter/img/logo-ceub-colorida.png" alt="Logo" class="logo">
+        <h1 class="main-title">Aluguel de Armários</h1>
+    </header>
+
+
+    <section class="controles">
+        <h2>Escolha um Armário Desocupado</h2>
+        <select id="armarios-disponiveis">
+            <option value="">Selecione um Armário</option>
+        </select>
+
+        <button type="submit" id="selecionar-armario" onclick="selecionarArmario()">Selecionar</button>
+        <button id="liberar-armario" onclick="liberarArmario()">Liberar</button>
+    </section>
+
+
+    <section class="mapa">
+        <div class="bloco" id="6">
+            <h2>Bloco 6 - Subsolo - Modulo A</h2>
+            <div class="Modulo" data-andar="A">
+                <div class="armario liberado" data-armario="001">Armário 001</div>
+                <div class="armario liberado" data-armario="002">Armário 002</div>
+                <div class="armario liberado" data-armario="003">Armário 003</div>
+                <div class="armario liberado" data-armario="004">Armário 004</div>
+                <div class="armario liberado" data-armario="005">Armário 005</div>
+                <div class="armario liberado" data-armario="006">Armário 006</div>
+                <div class="armario liberado" data-armario="007">Armário 007</div>
+                <div class="armario liberado" data-armario="008">Armário 008</div>
+                <div class="armario liberado" data-armario="009">Armário 009</div>
+                <div class="armario liberado" data-armario="010">Armário 010</div>
+                <div class="armario liberado" data-armario="011">Armário 011</div>
+                <div class="armario liberado" data-armario="012">Armário 012</div>
+                <div class="armario liberado" data-armario="013">Armário 013</div>
+                <div class="armario liberado" data-armario="014">Armário 014</div>
+                <div class="armario liberado" data-armario="015">Armário 015</div>
+                <div class="armario liberado" data-armario="016">Armário 016</div>
+                <div class="armario liberado" data-armario="017">Armário 017</div>
+                <div class="armario liberado" data-armario="018">Armário 018</div>
+                <div class="armario liberado" data-armario="019">Armário 019</div>
+                <div class="armario liberado" data-armario="020">Armário 020</div>
+                <div class="armario liberado" data-armario="021">Armário 021</div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>

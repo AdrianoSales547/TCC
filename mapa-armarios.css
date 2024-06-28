@@ -1,0 +1,108 @@
+/* mapa-armarios.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #e90707;
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloco {
+    margin: 20px;
+}
+
+.andar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.armario {
+    inline-size: 100px;
+    block-size: 100px;
+    background-color: #6caab1;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.liberado {
+    background-color: #6caab1;
+}
+
+.ocupado {
+    background-color: #e74c3c;
+}
+
+.liberado:hover {
+    background-color: #4d8d9b;
+}
+
+.ocupado:hover {
+    background-color: #c13928;
+}
+
+.controles {
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+#armarios-disponiveis {
+    margin-inline-end: 10px;
+}
+
+#selecionar-armario {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#liberar-armario {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    inset-block-end: 0;
+    inline-size: 50%;
+}
+.armario.selecionado {
+    background-color: #fffb00; /* Cor de fundo quando selecionado */
+    color: #000; /* Cor do texto quando selecionado */
+    border: 2px solid #000; /* Borda quando selecionado */
+}   
